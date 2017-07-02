@@ -1,0 +1,130 @@
+@import "../bourbon/bourbon"
+
+$color: #19B5FE //Theme skin
+$text_color: #888
+$main_color: #222
+$bg_light: #FAFAFA
+
+@mixin kerning($kerning)
+	letter-spacing: $kerning + px
+
+body
+	color: $main_color
+	+kerning(1)
+
+a
+	color: $color
+
+p,
+body .main_footer,
+.s_about li
+	color: $text_color
+
+.color_element
+	color: $color
+.color_bg
+	background-color: $color
+.color_border
+	border-color: $color
+
+.bg_light
+	background-color: $bg_light
+
+.bg_dark	
+	background-color: $main_color
+	color: #fff
+	.s_descr::after
+		background-color: #fff
+	a
+		background-color: #fff
+
+.main_color_bg
+	background-color: $main_color
+
+.toggle_mnu
+	background-color: #000
+
+.top_mnu
+	a:hover
+		color: $color
+		background-color: rgba(255,255,255,.06)
+	a
+		+kerning(3)
+
+.top_text
+	p
+		color: $bg_light
+		+kerning(4)
+
+.s_descr
+	+kerning(5)
+	&::after
+		background-color: $main_color
+
+.s_about
+	background-color: $bg_light
+
+section
+	h3
+		+kerning(3)
+
+.personal_header
+	+kerning(2)
+		
+.s_about
+	p:nth-child(even)
+		color: $color
+
+.resume_container
+	h3
+		color: $main_color
+		+kerning(1)
+		font-size: 18px
+		font-weight: 400
+	.left .resume_description  strong
+		margin-left: 10px
+	.right .resume_description  strong
+		margin-left: 10px
+
+.resume_icon
+	margin-bottom: 45px
+
+.resume_item
+	.year
+		background-color: $color
+	h3
+		+kerning(1)
+
+.s_portfolio
+	li
+		color: $text_color
+		+kerning(2)
+		&.active
+			color: #fff
+			border-bottom: 1px solid $color
+
+.portfolio_item .port_item_cont
+	a
+		border-color: $color
+		color: $color
+
+.main_footer a
+	color: $color
+	background-color: $main_color
+
+.contact_box i
+	color: $color
+
+.main_form
+	input:focus,
+	textarea:focus
+		border: 1px solid $color
+	input,
+	textarea
+		+kerning(2)
+	button
+		background-color: $color
+		+kerning(2)
+	.form-group
+		+kerning(2)
+		color: $text_color

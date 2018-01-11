@@ -7,7 +7,12 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+	.info{
+		padding-bottom: 20px;
+	}
+	.info_video {
+		margin-bottom: 30px;
+	}
 }
 
 /* Small Devices, Tablets */

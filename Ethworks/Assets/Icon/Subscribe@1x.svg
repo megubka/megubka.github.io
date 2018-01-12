@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="16px" viewBox="0 0 19 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/Subscribe@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MOBILE-FRONTEND-ZADANIE-320px" transform="translate(-269.000000, -397.000000)" fill="#FFFFFF">
+            <g id="//Header" transform="translate(15.000000, 84.000000)">
+                <g id="Subscribe" transform="translate(0.000000, 295.000000)">
+                    <g id="Btn" transform="translate(231.000000, 0.743070)">
+                        <polygon id="Icon/Subscribe" points="23.676 32.6664898 23.676 26.8464898 36.5331429 25.1664898 23.676 23.4864898 23.676 17.6664898 41.676 25.1664898"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

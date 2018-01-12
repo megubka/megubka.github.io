@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="11px" viewBox="0 0 11 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Profil/linkedin@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="FRONTENT-ZADANIE2" transform="translate(-1188.000000, -1286.000000)" fill-rule="nonzero" fill="#001832">
+            <g id="//CONTENT" transform="translate(134.000000, 846.000000)">
+                <g id="Tema">
+                    <g id="FREDENCK-PARSONS" transform="translate(899.000000, 79.000000)">
+                        <g id="social-media" transform="translate(90.000000, 355.000000)">
+                            <path d="M76,12.5180439 L76,17 L73.7073283,17 L73.7073283,12.8182183 C73.7073283,11.7677207 73.3757181,11.0507971 72.545847,11.0507971 C71.9123456,11.0507971 71.5353485,11.5339511 71.3694936,12.0013212 C71.3090109,12.1684042 71.2934426,12.4009618 71.2934426,12.6348442 L71.2934426,17 L69,17 C69,17 69.0308879,9.91743442 69,9.18362781 L71.2932188,9.18362781 L71.2932188,10.2915673 C71.2885682,10.2998538 71.2825249,10.3087886 71.2781479,10.3168214 L71.2932188,10.3168214 L71.2932188,10.2915673 C71.5978953,9.75973717 72.1420156,9 73.359926,9 C74.8688346,8.99997181 76,10.1171561 76,12.5180439 Z M66.5091388,6 C65.5967667,6 65,6.64770202 65,7.49945224 C65,8.33264124 65.5795014,9 66.4737405,9 L66.4915553,9 C67.4215975,9 68,8.33276645 68,7.49945224 C67.9824744,6.64770202 67.4215975,6 66.5091388,6 Z M65,17 L67,17 L67,10 L65,10 L65,17 Z" id="Profil/linkedin"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

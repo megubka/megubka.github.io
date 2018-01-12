@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="646px" height="778px" viewBox="0 0 646 778" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>BG/Shape2@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M-4.71355084,222.020393 L510.089143,221.691855 L362.142946,737.64156 L-4.71353982,737.515968 L-4.71353091,737.489945 C-46.677009,737.475579 -80.6875125,703.45343 -80.6875125,661.489949 L-80.7135354,298.068895 L-80.665018,298.068895 C-80.665018,256.114194 -46.6682124,222.095685 -4.71351988,222.06891 Z" id="path-1"></path>
+        <filter x="-33.3%" y="-37.4%" width="166.7%" height="176.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="65" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.149019608   0 0 0 0 0.2   0 0 0 0 0.588235294  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="FRONTENT-ZADANIE2">
+            <g id="//BG" transform="translate(0.000000, -102.000000)">
+                <g id="header-bg">
+                    <g id="Rectangle">
+                        <g id="BG/Shape2" transform="translate(214.687804, 479.666707) scale(-1, 1) rotate(-16.000000) translate(-214.687804, -479.666707) ">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#4250BF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

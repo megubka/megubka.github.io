@@ -13,6 +13,13 @@
 	.info_video {
 		margin-bottom: 30px;
 	}
+	.reg {
+		margin-top: 0;
+		padding-top: 15px;
+	}
+	.reg_header{
+		margin-top: 0 !important;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -20,14 +27,20 @@
 	.logo {
 		left: 0;
 	}
+	.reg > p {
+		font-size: 16px;
+	}
+	.logo_top{
+		display: none;
+	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-	.top_centered > h2 {
+	.top_centered > .container > .row > h2 {
 		font-size: 28px !important;
 	}
-	.top_centered > p {
+	.top_centered > .container > .row >  p {
 		font-size: 16px !important;
 	}
 	.sending {
@@ -46,6 +59,12 @@
 	}
 	.logo {
 		left: -30px;
+	}
+	.reg{
+		margin-bottom: 40px;
+	}
+	.reg > p {
+		font-size: 20px;
 	}
 }
 

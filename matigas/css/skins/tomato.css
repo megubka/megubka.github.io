@@ -47,4 +47,11 @@ p {
 .map {
   background-color: #ffc000; }
 
+.reg > p {
+  color: #000; }
+
+.main_footer {
+  color: #fff;
+  background-color: #222; }
+
 /*# sourceMappingURL=tomato.css.map */

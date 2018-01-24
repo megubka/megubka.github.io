@@ -6,7 +6,7 @@ $(document).ready(function() {
 });
 
 // Here I have set the upcoming New Year Date
-var countDownDate = new Date("Dec 31, 2017 23:59:59").getTime();
+var countDownDate = new Date("Dec 31, 2018 23:59:59").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {

@@ -1,19 +1,37 @@
-body {
-  font-family: "Raleway", sans-serif;
-  font-weight: normal;
-  font-size: 14px;
-  min-width: 320px;
-  position: relative;
-  line-height: 1.42857;
-  -webkit-font-smoothing: antialised; }
+/*
+Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 1 tab.
+        on line 271 of /Users/alimzhanaigarayev/Documents/Портфолио/__clean_html_original/css/sass/main.sass
 
-body input:focus:required:invalid,
-body textarea:focus:required:invalid {
-  color: red; }
+266: 		padding: 0 5px
+267: 
+268: /* ================ The Timeline ================ *\/
+269: 
+270: .timeline 
+271:   position: relative
+272:   width: 660px
+273:   margin: 0 auto
+274:   margin-top: 20px
+275:   padding: 1em 0
+276:   list-style-type: none
 
-body input:required:valid,
-body textarea:required:valid {
-  color: green; }
-
-.hidden {
-  display: none; }
+Backtrace:
+/Users/alimzhanaigarayev/Documents/Портфолио/__clean_html_original/css/sass/main.sass:271
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:486:in `block in tabulate'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:444:in `each'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:444:in `each_with_index'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:444:in `tabulate'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:409:in `_to_tree'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:391:in `run'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `load'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 1 tab.\A         on line 271 of /Users/alimzhanaigarayev/Documents/Портфолио/__clean_html_original/css/sass/main.sass\A \A 266: 		padding: 0 5px\A 267: \A 268: /* ================ The Timeline ================ */\A 269: \A 270: .timeline \A 271:   position: relative\A 272:   width: 660px\A 273:   margin: 0 auto\A 274:   margin-top: 20px\A 275:   padding: 1em 0\A 276:   list-style-type: none"; }

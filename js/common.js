@@ -55,13 +55,19 @@ $(document).ready(function() {
 		};
 	});
 	$(".portfolio_item").each(function(i) {
-		$(this).find("a").attr("href", "#work_" + i);
+		$(this).find("a[href*='#']").attr("href", "#work_" + i);
 		$(this).find(".podrt_descr").attr("id", "work_" + i);
 	});
 
-	$("a[href*='#']").mPageScroll2id();
+	$(".top_mnu a[href*='#']").mPageScroll2id();
 
 	$("input, select, textarea").jqBootstrapValidation();
+
+	$('.skillbar').each(function(){
+		$(this).find('.skillbar_bar').animate({
+			width:$(this).attr('data-percent')
+		}, 6000);
+	});
 
 });
 

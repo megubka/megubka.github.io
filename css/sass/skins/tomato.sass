@@ -12,6 +12,9 @@ body
 	color: $main_color
 	+kerning(1)
 
+.contact_box_icon
+	color: $color
+
 a
 	color: $color
 
@@ -21,7 +24,7 @@ body .main_footer,
 	color: $text_color
 
 .color_element
-	color: $color
+	color: $main_color
 .color_bg
 	background-color: $color
 .color_border
@@ -118,12 +121,12 @@ section
 .main_form
 	input:focus,
 	textarea:focus
-		border: 1px solid $color
+		border: 1px solid $main_color
 	input,
 	textarea
 		+kerning(2)
 	button
-		background-color: $color
+		background-color: $main_color
 		+kerning(2)
 	.form-group
 		+kerning(2)

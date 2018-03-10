@@ -2,6 +2,9 @@ body {
   color: #222;
   letter-spacing: 1px; }
 
+.contact_box_icon {
+  color: #19B5FE; }
+
 a {
   color: #19B5FE; }
 
@@ -11,7 +14,7 @@ body .main_footer,
   color: #888; }
 
 .color_element {
-  color: #19B5FE; }
+  color: #222; }
 
 .color_bg {
   background-color: #19B5FE; }
@@ -101,13 +104,15 @@ section h3 {
 
 .main_form input:focus,
 .main_form textarea:focus {
-  border: 1px solid #19B5FE; }
+  border: 1px solid #222; }
 .main_form input,
 .main_form textarea {
   letter-spacing: 2px; }
 .main_form button {
-  background-color: #19B5FE;
+  background-color: #222;
   letter-spacing: 2px; }
 .main_form .form-group {
   letter-spacing: 2px;
   color: #888; }
+
+/*# sourceMappingURL=tomato.css.map */

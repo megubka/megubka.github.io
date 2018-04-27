@@ -3,10 +3,10 @@ body {
   letter-spacing: 1px; }
 
 .contact_box_icon {
-  color: #19B5FE; }
+  color: #bc7a00; }
 
 a {
-  color: #19B5FE; }
+  color: #bc7a00; }
 
 p,
 body .main_footer,
@@ -17,10 +17,10 @@ body .main_footer,
   color: #222; }
 
 .color_bg {
-  background-color: #19B5FE; }
+  background-color: #bc7a00; }
 
 .color_border {
-  border-color: #19B5FE; }
+  border-color: #bc7a00; }
 
 .bg_light {
   background-color: #FAFAFA; }
@@ -29,7 +29,7 @@ body .main_footer,
   background-color: #222;
   color: #fff; }
   .bg_dark .s_descr::after {
-    background-color: #fff; }
+    background-color: #bc7a00; }
   .bg_dark a {
     background-color: #fff; }
 
@@ -40,7 +40,7 @@ body .main_footer,
   background-color: #000; }
 
 .top_mnu a:hover {
-  color: #19B5FE;
+  color: #bc7a00;
   background-color: rgba(255, 255, 255, 0.06); }
 .top_mnu a {
   letter-spacing: 3px; }
@@ -52,7 +52,7 @@ body .main_footer,
 .s_descr {
   letter-spacing: 5px; }
   .s_descr::after {
-    background-color: #222; }
+    background-color: #bc7a00; }
 
 .s_about {
   background-color: #FAFAFA; }
@@ -64,7 +64,7 @@ section h3 {
   letter-spacing: 2px; }
 
 .s_about p:nth-child(even) {
-  color: #19B5FE; }
+  color: #bc7a00; }
 
 .resume_container h3 {
   color: #222;
@@ -80,7 +80,7 @@ section h3 {
   margin-bottom: 45px; }
 
 .resume_item .year {
-  background-color: #19B5FE; }
+  background-color: #bc7a00; }
 .resume_item h3 {
   letter-spacing: 1px; }
 
@@ -89,18 +89,21 @@ section h3 {
   letter-spacing: 2px; }
   .s_portfolio li.active {
     color: #fff;
-    border-bottom: 1px solid #19B5FE; }
+    border-bottom: 1px solid #bc7a00; }
 
 .portfolio_item .port_item_cont a {
-  border-color: #19B5FE;
-  color: #19B5FE; }
+  border-color: #bc7a00;
+  color: #bc7a00; }
+
+.active, .dot:hover {
+  background-color: #bc7a00; }
 
 .main_footer a {
-  color: #19B5FE;
+  color: #bc7a00;
   background-color: #222; }
 
 .contact_box i {
-  color: #19B5FE; }
+  color: #bc7a00; }
 
 .main_form input:focus,
 .main_form textarea:focus {

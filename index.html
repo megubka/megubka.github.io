@@ -5,12 +5,10 @@
 	<title>Portfolio</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="shortcut icon" href="favicon.png" />
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css" />
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="libs/linea/styles.css" />
 	<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css" />
-	<link rel="stylesheet" href="libs/animate/animate.min.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/skins/tomato.css" />
@@ -41,8 +39,9 @@
 				<nav class="top_mnu">
 					<ul>
 						<li><a href="#about">About me</a></li>
-						<li><a href="#resume">Education and Experience</a></li>
-						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#skills">Professional expertise</a></li>
+						<li><a href="#resume">Experience</a></li>
+						<li><a href="#portfolio">Latest Projects</a></li>
 						<li><a href="#contacts">Contacts</a></li>
 					</ul>
 				</nav>
@@ -60,6 +59,7 @@
 			</div>
 		</div>
 	</header>
+
 <section id="about" class="s_about bg_light">
 	<div class="section_header">
 		<h2>About</h2>
@@ -70,22 +70,17 @@
 		<div class="section_content">
 			<div class="container">
 				<div class="row">
-					
-					<div class="col-md-4 col-md-push-4 animation_1">
+					<div class="col-md-4">
 						<h3>Photo</h3>
 						<div class="person">
 							<img src="img/person.jpg" alt="Alt">
 						</div>
 					</div>
-					<div class="col-md-4 col-md-pull-4 animation_2">
-						<h3>About myself</h3>
-						<p>I am 22 years old. I am from Kazakhstan. I have graduated from WSIiZ in Rzeszow, Poland, living in Warsaw.</p>
-						<p>I would like to enhance my experience that can afford me to put it into practice. The more challenges your company can provide me with, the more efficient my workability would be.</p>
-					</div>
-					<div class="col-md-4 animation_3 personal_last_block">
+					<div class="col-md-8 personal_last_block">
 						<h3>Personal information</h3>
 						<h2 class="personal_header">Alimzhan Aigarayev</h2>
 						<ul>
+							<li>I would like to enhance my experience that can afford me to put it into practice. The more challenges your company can provide me with, the more efficient my workability would be.</li>
 							<li>Country of Origin: Kazakhstan</li>
 							<li>Place of Residence: Warsaw, Poland</li>
 							<li>Date of Birth: 21 September 1995</li>
@@ -101,42 +96,67 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-md-12">
-						<h3>Proffesional Expertise</h3>
-						<div class="skillbar" data-percent="90%">
-							<div class="skillbar_title" style="background: #88cd2a;"><span>HTML5</span></div>
-							<div class="skillbar_bar" style="background: #88cd2a;"></div>
-							<div class="skillbar_bar_percent">90%</div>
-						</div>
-						<div class="skillbar" data-percent="85%">
-							<div class="skillbar_title" style="background: #00a8ff;"><span>CSS/SASS</span></div>
-							<div class="skillbar_bar" style="background: #00a8ff;"></div>
-							<div class="skillbar_bar_percent">85%</div>
-						</div>
-						<div class="skillbar" data-percent="70%">
-							<div class="skillbar_title" style="background: #e7d465;"><span>JavaScript</span></div>
-							<div class="skillbar_bar" style="background: #e7d465;"></div>
-							<div class="skillbar_bar_percent">70%</div>
-						</div>
-						<div class="skillbar" data-percent="50%">
-							<div class="skillbar_title" style="background: #63cbff;"><span>ReactJS</span></div>
-							<div class="skillbar_bar" style="background: #63cbff;"></div>
-							<div class="skillbar_bar_percent">50%</div>
-						</div>
-						<div class="skillbar" data-percent="60%">
-							<div class="skillbar_title" style="background: #243046;"><span>jQuery</span></div>
-							<div class="skillbar_bar" style="background: #243046;"></div>
-							<div class="skillbar_bar_percent">60%</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
 </section>
 
+<section id="skills" class="bg_dark">
+	<div class="section_header">
+		<h2>Professional expertise</h2>
+		<div class="s_descr_wrap">
+			<div class="s_descr"></div>
+		</div>
+	</div>
+	<div class="section_skills">
+		<div class="container">
+			<div class="row">
+				<div class="skills">
+					<div class="col-md-3">
+						<div class="skill_container">
+							<div class="skill_logo">
+								<i class="fab fa-html5"></i>
+							</div>
+							<h3>HTML5</h3>
+							<p>HTML is the skeleton of all web pages.</p>
+						</div>	
+					</div>
+					<div class="col-md-3">
+						<div class="skill_container">
+							<div class="skill_logo">
+								<i class="fab fa-css3-alt"></i>
+							</div>
+							<h3>CSS3</h3>
+							<p>In most of my projects, I use SASS preprocessor.</p>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="skill_container">
+							<div class="skill_logo">
+								<i class="fab fa-js"></i>
+							</div>
+							<h3>JavaScript</h3>
+							<p>I am good at JavaScript and sometimes I use jQuery library</p>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="skill_container">
+							<div class="skill_logo">
+								<i class="fab fa-react"></i>
+							</div>
+							<h3>React</h3>
+							<p>Right now, I am working in React. I have done couple of projects using this JS library. With React I use such tools as Redux, Router etc.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
 <section id="resume" class="s_resume">
 	<div class="section_header">
-		<h2>Education and Experience</h2>
+		<h2>Experience</h2>
 		<div class="s_descr_wrap">
 			<div class="s_descr"></div>
 		</div>
@@ -146,21 +166,29 @@
 				<div class="row">
 					<div class="resume_container">
 						<div class="col-md-12 col-sm-12">
-							<h3>Experience</h3>
-								<!-- The Timeline -->
+							<!-- The Timeline -->
 								<ul class="timeline">
 									<!-- Item 1 -->
+									<li>
+										<div class="direction-l">
+											<div class="flag-wrapper">
+												<span class="flag">MoneyGram</span>
+												<span class="time-wrapper"><span class="time">2018 - present</span></span>
+											</div>
+											<div class="desc">My current employment. Supporting agents regarding software and equipment.</div>
+										</div>
+									</li>
+									<!-- Item 2 -->
 									<li>
 										<div class="direction-r">
 											<div class="flag-wrapper">
 												<span class="flag">Freelancer</span>
-												<span class="time-wrapper"><span class="time">2018 - present</span></span>
+												<span class="time-wrapper"><span class="time">2018</span></span>
 											</div>
-											<div class="desc">My current employment. Working on some projects.</div>
+											<div class="desc">Have done some projects.</div>
 										</div>
 									</li>
-								
-									<!-- Item 2 -->
+									<!-- Item 3 -->
 									<li>
 										<div class="direction-l">
 											<div class="flag-wrapper">
@@ -170,8 +198,7 @@
 											<div class="desc">Assessments: item development (traditional and interactive), passage development, correlations/standards, leveling/rubrics. Designing and creating assets.</div>
 										</div>
 									</li>
-
-									<!-- Item 3 -->
+									<!-- Item 4 -->
 									<li>
 										<div class="direction-r">
 											<div class="flag-wrapper">
@@ -181,49 +208,7 @@
 											<div class="desc">I was installing, upgrading, configuring, performance tuning, maintaining and providing general support of Windows operation systems. Debugging system related issues.</div>
 										</div>
 									</li>
-								
 								</ul>
-						</div>
-						<div class="col-md-12 education">
-							<h3>Education</h3>
-							<ul class="timeline">
-								<!-- Item 1 -->
-								<li>
-									<div class="direction-r">
-										<div class="flag-wrapper">
-											<span class="flag">Linguistic Gymnasium № 132</span>
-											<span class="time-wrapper"><span class="time">2001 - 2011</span></span>
-										</div>
-										<div class="desc">School</div>
-									</div>
-								</li>
-							
-								<!-- Item 2 -->
-								<li>
-									<div class="direction-l">
-										<div class="flag-wrapper">
-											<span class="flag small_screen">College IAB</span>
-											<span class="flag big_screen">College of International Academy of Business</span>
-											<span class="time-wrapper"><span class="time">2011 - 2014</span></span>
-										</div>
-										<div class="desc">Associate Degree. Information Systems faculty.</div>
-									</div>
-								</li>
-
-								<!-- Item 3 -->
-								<li>
-									<div class="direction-r">
-										<div class="flag-wrapper">
-											<span class="flag small_screen">UITM</span>
-											<span class="flag big_screen">University of Information Technology and Management</span>
-											<span class="time-wrapper"><span class="time">2014 - 2017</span></span>
-										</div>
-										<div class="desc">Bachelor Degree. Networking faculty.</div>
-									</div>
-								</li>
-							
-							</ul>
-							
 						</div>
 					</div>
 				</div>
@@ -233,7 +218,7 @@
 
 <section id="portfolio" class="s_portfolio bg_dark" >
 	<div class="section_header">
-		<h2>Portfolio</h2>
+		<h2>Latest projects</h2>
 		<div class="s_descr_wrap">
 			<div class="s_descr"></div>
 		</div>
@@ -241,161 +226,82 @@
 		<div class="section_content">
 			<div class="container">
 				<div class="row">
-					<div class="filter_div controls">
-						<ul>
-							<li class="filter active" data-filter="all">All projects</li>
-							<li class="filter" data-filter=".category-1">Websites</li>
-							<li class="filter" data-filter=".category-2">React</li>
-							<li class="filter" data-filter=".category-3">Assets</li>
-						</ul>
-					</div>
-					<div id="portfolio_grid">
-						<div class="mix col-md-3 col-sm-6 col-xs-12 portfolio_item category-1">
-							<img src="img/portfolio-images/1.png" alt="Alt" />
-							<div class="port_item_cont">
-								<h3>Website template</h3>
-								<p>PSD to HTML</p>
-								<a href="#" class="popup_content">Check it out</a>
-							</div>
-							<div class="hidden">
-								<div class="podrt_descr">
-									<div class="modal-box-content">
-										<button class="mfp-close" type="button" title="Close (Esc)">x</button>
-										<h3>Website Template</h3>
-										<p>This website template I have done from PSD file.</p>
-										<p><a href="https://github.com/megubka/Project-2"  target="_blank">Check it out</a></p>
-										<img src="img/portfolio-images/1.png" alt="Alt" />
+					<div class="portfolio_grid">
+						<div class="mobile">
+							<div class="slider">
+								<div class="slides fade">
+									<div class="portfolio_item">
+										<a href="https://github.com/megubka/Project-2">
+											<img src="img/portfolio-images/1.png" alt="Alt" />
+										</a>
 									</div>
 								</div>
-							</div>
-						</div>
-						<div class="mix col-md-3 col-sm-6 col-xs-12 portfolio_item category-1">
-							<img src="img/portfolio-images/2.png" alt="Alt" />
-							<div class="port_item_cont">
-								<h3>Website Template</h3>
-								<p>PSD To HTML</p>
-								<a href="#" class="popup_content">Check it out</a>
-							</div>
-							<div class="hidden">
-								<div class="podrt_descr">
-									<div class="modal-box-content">
-										<button class="mfp-close" type="button" title="Close (Esc)">x</button>
-										<h3>Website Template</h3>
-										<p>This website template I have done from PSD file.</p>
-										<p><a href="https://github.com/megubka/Project-2"  target="_blank">Check it out</a></p>
-										<img src="img/portfolio-images/2.png" alt="Alt" />
+								<div class="slides fade">
+									<div class="portfolio_item">
+										<a href="https://www.mauthor.com/mycontent/view/5847335218446336?next=/mycontent">
+											<img src="img/portfolio-images/3.png" alt="Alt" />
+										</a>
 									</div>
 								</div>
-							</div>
-						</div>
-						<div class="mix col-md-3 col-sm-6 col-xs-12 portfolio_item category-3">
-							<img src="img/portfolio-images/3.png" alt="Alt" />
-							<div class="port_item_cont">
-								<h3>E-Learning assets</h3>
-								<p>Made on mAuthor</p>
-								<a href="#" class="popup_content">Check it out</a>
-							</div>
-							<div class="hidden">
-								<div class="podrt_descr">
-									<div class="modal-box-content">
-										<button class="mfp-close" type="button" title="Close (Esc)">x</button>
-										<h3>E-Learning assets</h3>
-										<p>I have done hundreds of them while working in BLPS.</p>
-										<p><a href="https://www.mauthor.com/mycontent/view/5847335218446336?next=/mycontent"  target="_blank">Check it out</a></p>
-										<img src="img/portfolio-images/3.png" alt="Alt" />
+								<div class="slides fade">
+									<div class="portfolio_item">
+										<a href="https://github.com/megubka/E-Shop">
+											<img src="img/portfolio-images/4.png" alt="Alt" />
+										</a>
 									</div>
 								</div>
-							</div>
-						</div>
-						<div class="mix col-md-3 col-sm-6 col-xs-12 portfolio_item category-2">
-							<img src="img/portfolio-images/4.png" alt="Alt" />
-							<div class="port_item_cont">
-								<h3>E-Shop</h3>
-								<p>React + Redux.</p>
-								<a href="#" class="popup_content">Check it out</a>
-							</div>
-							<div class="hidden">
-								<div class="podrt_descr">
-									<div class="modal-box-content">
-										<button class="mfp-close" type="button" title="Close (Esc)">x</button>
-										<h3>E-shop</h3>
-										<p>E-shop template which has been made on React + Redux</p>
-										<p><a href="https://github.com/megubka/E-Shop"  target="_blank">Check it out</a></p>
-										<img src="img/portfolio-images/4.png" alt="Alt" />
+								<div class="slides fade">
+									<div class="portfolio_item">
+										<a href="matigas.kz">
+											<img src="img/portfolio-images/8.png" alt="Alt" />
+										</a>
 									</div>
 								</div>
-							</div>
-						</div>
-						<div class="mix col-md-3 col-sm-6 col-xs-12 portfolio_item category-2">
-							<img src="img/portfolio-images/other.png" alt="Alt" />
-							<div class="port_item_cont">
-								<h3>Name of the project</h3>
-								<p>Description of the project</p>
-								<a href="#" class="popup_content">Check it out</a>
-							</div>
-							<div class="hidden">
-								<div class="podrt_descr">
-									<div class="modal-box-content">
-										<button class="mfp-close" type="button" title="Close (Esc)">x</button>
-										<h3>Name of the project</h3>
-										<p>Description of the project</p>
+								<div class="slides fade">
+									<div class="portfolio_item">
 										<img src="img/portfolio-images/other.png" alt="Alt" />
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="mix col-md-3 col-sm-6 col-xs-12 portfolio_item category-2">
-							<img src="img/portfolio-images/other.png" alt="Alt" />
-							<div class="port_item_cont">
-								<h3>Name of the project</h3>
-								<p>Description of the project</p>
-								<a href="#" class="popup_content">Check it out</a>
+							<div class="slider_nav" style="text-align: center">
+								<span class="dot active" onclick="currentSlide(1)"></span>
+								<span class="dot" onclick="currentSlide(2)"></span>
+								<span class="dot" onclick="currentSlide(3)"></span>
+								<span class="dot" onclick="currentSlide(4)"></span>
+								<span class="dot" onclick="currentSlide(5)"></span>
 							</div>
-							<div class="hidden">
-								<div class="podrt_descr">
-									<div class="modal-box-content">
-										<button class="mfp-close" type="button" title="Close (Esc)">x</button>
-										<h3>Name of the project</h3>
-										<p>Description of the project</p>
-										<img src="img/portfolio-images/other.png" alt="Alt" />
-									</div>
+						</div>
+						<div class="desktop">
+							<div class="col-md-3 portfolio_item">
+								<img src="img/portfolio-images/1.png" alt="Alt" />
+								<div class="port_item_cont">
+									<h3>Website template</h3>
+									<p>PSD to HTML</p>
+									<a href="https://github.com/megubka/Project-2" target="_blank">Check it out</a>
 								</div>
 							</div>
-						</div>
-						<div class="mix col-md-3 col-sm-6 col-xs-12 portfolio_item category-3">
-							<img src="img/portfolio-images/other.png" alt="Alt" />
-							<div class="port_item_cont">
-								<h3>Name of the project</h3>
-								<p>Description of the project</p>
-								<a href="#" class="popup_content">Check it out</a>
-							</div>
-							<div class="hidden">
-								<div class="podrt_descr">
-									<div class="modal-box-content">
-										<button class="mfp-close" type="button" title="Close (Esc)">x</button>
-										<h3>Name of the project</h3>
-										<p>Description of the project</p>
-										<img src="img/portfolio-images/other.png" alt="Alt" />
-									</div>
+							<div class="col-md-3 portfolio_item">
+								<img src="img/portfolio-images/3.png" alt="Alt" />
+								<div class="port_item_cont">
+									<h3>E-Learning assets</h3>
+									<p>I have done hundreds of them while working in BLPS</p>
+									<a href="https://www.mauthor.com/mycontent/view/5847335218446336?next=/mycontent" target="_blank">Check it out</a>
 								</div>
 							</div>
-						</div>
-						<div class="mix col-md-3 col-sm-6 col-xs-12 portfolio_item category-1">
-							<img src="img/portfolio-images/8.png" alt="Alt" />
-							<div class="port_item_cont">
-								<h3>Taxi Website</h3>
-								<p>Made from Scratch</p>
-								<a href="#" class="popup_content">Check it out</a>
+							<div class="col-md-3 portfolio_item">
+								<img src="img/portfolio-images/4.png" alt="Alt" />
+								<div class="port_item_cont">
+									<h3>E-shop</h3>
+									<p>React + Redux</p>
+									<a href="https://github.com/megubka/E-Shop" target="_blank">Check it out</a>
+								</div>
 							</div>
-							<div class="hidden">
-								<div class="podrt_descr">
-									<div class="modal-box-content">
-										<button class="mfp-close" type="button" title="Close (Esc)">x</button>
-										<h3>Taxi Website</h3>
-										<p>Taxi website was made and designed by me. That was a freelance order.</p>
-										<p><a href="http://matigas.kz/"  target="_blank">Check it out</a></p>
-										<img src="img/portfolio-images/8.png" alt="Alt" />
-									</div>
+							<div class="col-md-3 portfolio_item">
+								<img src="img/portfolio-images/8.png" alt="Alt" />
+								<div class="port_item_cont">
+									<h3>Taxi Website</h3>
+									<p>Made from Scratch</p>
+									<a href="http://matigas.kz/" target="_blank">Check it out</a>
 								</div>
 							</div>
 						</div>
@@ -479,10 +385,8 @@
 	<script src="libs/jquery/jquery-2.1.3.min.js"></script>
 	<script src="libs/parallax/parallax.min.js"></script>
 	<script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
-	<script src="libs/mixitup/mixitup.min.js"></script>
 	<script src="libs/scroll2id/PageScroll2id.min.js"></script>
 	<script src="libs/waypoints/waypoints.min.js"></script>
-	<script src="libs/animate/animate-css.js"></script>
 	<script src="libs/jqBootstrapValidation/jqBootstrapValidation.js"></script>
 	<script src="js/common.js"></script>
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->

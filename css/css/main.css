@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 body {
   font-family: "Raleway", sans-serif;
   font-weight: normal;
@@ -264,34 +265,205 @@ section {
   font-size: 20px;
   padding: 0 5px; }
 
-.resume_container .left {
-  text-align: right;
-  border-right: #666 1px solid; }
-  .resume_container .left h3, .resume_container .left .resume_icon {
-    text-align: right; }
-    .resume_container .left h3 i, .resume_container .left .resume_icon i {
-      font-size: 40px; }
+.skillbar {
+  font-family: "Open Sans", "sans-serif";
+  text-align: center;
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  height: 35px;
+  border-radius: 3px;
+  transition: 0.4s linear;
+  transition-property: width, background-color; }
 
-.resume_container .right {
+.skillbar_title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+  font-size: 13px;
+  color: #fff;
+  background: #6adcfa;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px; }
+
+.skillbar_title span {
+  display: block;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+  height: 35px;
+  line-height: 35px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px; }
+
+.skillbar_bar {
+  height: 35px;
+  width: 0;
+  background: #6adcfa;
+  border-radius: 3px; }
+
+.skillbar_bar_percent {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 11px;
+  height: 35px;
+  line-height: 35px;
+  color: #444;
+  color: rgba(0, 0, 0, 0.5); }
+
+/* ================ The Timeline ================ */
+.timeline {
+  position: relative;
+  width: 1080px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 1em 0;
+  list-style-type: none; }
+
+.timeline:before {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  content: " ";
+  display: block;
+  width: 6px;
+  height: 100%;
+  margin-left: -3px;
+  background: #505050;
+  background: -moz-linear-gradient(top, rgba(80, 80, 80, 0) 0%, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1e5799), color-stop(100%, #7db9e8));
+  background: -webkit-linear-gradient(top, rgba(80, 80, 80, 0) 0%, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%);
+  background: -o-linear-gradient(top, rgba(80, 80, 80, 0) 0%, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%);
+  background: -ms-linear-gradient(top, rgba(80, 80, 80, 0) 0%, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%);
+  background: linear-gradient(to bottom, rgba(80, 80, 80, 0) 0%, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%);
+  z-index: 5; }
+
+.timeline li {
+  padding: 1em 0; }
+
+.timeline li:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.direction-l {
+  position: relative;
+  width: 507px;
+  float: left;
+  text-align: right; }
+
+.direction-r {
+  position: relative;
+  width: 506px;
+  float: right; }
+
+.flag-wrapper {
+  position: relative;
+  display: inline-block;
+  text-align: center; }
+
+.flag {
+  position: relative;
+  display: inline;
+  background: #f8f8f8;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-weight: 600;
   text-align: left; }
-  .resume_container .right h3, .resume_container .right .resume_icon {
-    text-align: left; }
-    .resume_container .right h3 i, .resume_container .right .resume_icon i {
-      font-size: 40px; }
+
+.direction-l .flag {
+  -webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15); }
+
+.direction-r .flag {
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15); }
+
+.direction-l .flag:before,
+.direction-r .flag:before {
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  content: " ";
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-top: -10px;
+  background: #fff;
+  border-radius: 10px;
+  border: 3px solid #19B5FE;
+  z-index: 10; }
+
+.small_screen {
+  display: none; }
+
+.direction-r .flag:before {
+  left: -40px; }
+
+.direction-l .flag:after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  height: 0;
+  width: 0;
+  margin-top: -8px;
+  border: solid transparent;
+  border-left-color: #f8f8f8;
+  border-width: 8px;
+  pointer-events: none; }
+
+.direction-r .flag:after {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  height: 0;
+  width: 0;
+  margin-top: -8px;
+  border: solid transparent;
+  border-right-color: #f8f8f8;
+  border-width: 8px;
+  pointer-events: none; }
+
+.time-wrapper {
+  display: inline;
+  line-height: 1em;
+  font-size: 0.66666em;
+  color: #888;
+  vertical-align: middle; }
+
+.direction-l .time-wrapper {
+  float: left; }
+
+.direction-r .time-wrapper {
+  float: right; }
+
+.time {
+  display: inline-block;
+  padding: 4px 6px;
+  background: #f8f8f8; }
+
+.desc {
+  margin: 1em 0.75em 0 0;
+  font-size: 0.77777em;
+  font-style: italic;
+  line-height: 1.5em; }
+
+.direction-r .desc {
+  margin: 1em 0 0 0.75em; }
+
+.education {
+  margin-top: 100px; }
 
 h3 {
   margin-top: 30px; }
-
-.year {
-  display: inline-block;
-  margin-bottom: 20px;
-  padding: 0 10px;
-  color: #fff;
-  font-weight: 600;
-  font-style: italic;
-  padding: 0 15px;
-  margin-bottom: 20px;
-  margin-top: 20px; }
 
 .resume_description {
   font-style: italic; }
@@ -375,17 +547,18 @@ strong {
   position: relative; }
 
 .contact_box {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  font-size: 2em; }
   .contact_box h3 {
     text-align: left;
     color: #000;
     margin-bottom: 10px;
     font-size: 14px; }
   .contact_box i {
-    font-size: 35px;
     margin-bottom: 10px; }
   .contact_box p {
-    margin-top: 5px; }
+    margin-top: 5px;
+    font-size: 14px; }
 
 form button {
   border: none;

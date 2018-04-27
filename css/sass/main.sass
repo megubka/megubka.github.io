@@ -87,7 +87,6 @@ section
 	border: none
 	right: 20px
 	top: 20px
-
 	span
 		display: block
 
@@ -193,8 +192,6 @@ $h: 5px
 	p
 		margin: 0
 		text-transform: uppercase
-		+animation-delay(1.45s)
-
 	h1
 		display: inline-block
 		padding: 10px 30px
@@ -206,7 +203,17 @@ $h: 5px
 		font-weight: 700
 		font-size: 44px
 		background-color: rgba(0,0,0,.5)
-		+animation-delay(1s)
+		animation: fade-in-down 2s ease
+
+@keyframes fade-in-down 
+	0%
+		opacity: 0
+		transform: translateY(-30px)
+	100% 
+		opacity: 1
+		transform: translateY(0)
+  
+
 		
 
 .h_opacify
@@ -265,54 +272,6 @@ $h: 5px
 		display: inline-block
 		font-size: 20px
 		padding: 0 5px
-
-.skillbar 
-	font-family: 'Open Sans', 'sans-serif'
-	text-align: center
-	position: relative
-	display: block
-	width: 100%
-	margin-bottom: 15px
-	height: 35px
-	border-radius: 3px
-	transition: 0.4s linear
-	transition-property: width, background-color
-
-.skillbar_title
-	position: absolute
-	top: 0
-	left: 0
-	font-weight: bold
-	font-size: 13px
-	color: #fff
-	background: #6adcfa
-	border-top-left-radius: 3px
-	border-bottom-left-radius: 3px
-
-.skillbar_title span
-	display: block
-	background: rgba(0, 0, 0, 0.1)
-	padding: 0 20px
-	height: 35px
-	line-height: 35px
-	border-top-left-radius: 3px
-	border-bottom-left-radius: 3px
-
-.skillbar_bar
-	height: 35px
-	width: 0
-	background: #6adcfa
-	border-radius: 3px
-
-.skillbar_bar_percent
-	position: absolute
-	right: 10px
-	top: 0
-	font-size: 11px
-	height: 35px
-	line-height: 35px
-	color: #444
-	color: rgba(0, 0, 0, 0.5)
 
 /* ================ The Timeline ================ */
 
@@ -406,7 +365,7 @@ $h: 5px
 	margin-top: -10px
 	background: #fff
 	border-radius: 10px
-	border: 3px solid #19B5FE
+	border: 3px solid #bc7a00
 	z-index: 10
 
 .small_screen
@@ -414,7 +373,6 @@ $h: 5px
 
 .direction-r .flag:before 
 	left: -40px
-
 
 .direction-l .flag:after 
 	content: ""
@@ -429,7 +387,6 @@ $h: 5px
 	border-width: 8px
 	pointer-events: none
 
-
 .direction-r .flag:after 
 	content: ""
 	position: absolute
@@ -443,7 +400,6 @@ $h: 5px
 	border-width: 8px
 	pointer-events: none
 
-
 .time-wrapper 
 	display: inline
 	line-height: 1em
@@ -451,20 +407,16 @@ $h: 5px
 	color: #888
 	vertical-align: middle
 
-
 .direction-l .time-wrapper 
 	float: left
 
-
 .direction-r .time-wrapper 
 	float: right
-
 
 .time 
 	display: inline-block
 	padding: 4px 6px
 	background: rgb(248,248,248)
-
 
 .desc
 	margin: 1em 0.75em 0 0
@@ -472,13 +424,21 @@ $h: 5px
 	font-style: italic
 	line-height: 1.5em
 
-
 .direction-r .desc 
 	margin: 1em 0 0 0.75em
+
+.skill_container
+	border: 2px solid white
+	height: 330px
+	text-align: center
+	padding: 30px 20px
+	transition-duration: .3s
+	transition-property: transform
+	h3
+		margin: 20px 0
 	
-		
-.education
-	margin-top: 100px
+.skill_logo
+	font-size: 70px
 
 h3
 	margin-top: 30px
@@ -498,26 +458,13 @@ strong
 	&:last-child
 		margin-bottom: 0
 
-.s_portfolio
-	ul,
-	li 
-		list-style-type: none
-		padding: 0
-		margin: 0
-		text-align: center
-	li
-		display: inline-block
-		margin: 0 15px
-		text-transform: uppercase
-		font-size: 14px
-		cursor: pointer
-		line-height: 2
-	ul
-		margin-bottom: 50px
+.portfolio_grid
+	text-align: center
+	justify-content: center
 
 .portfolio_item
-	display: none
 	padding: 0
+	position: relative
 	img
 		width: 100%
 	.port_item_cont
@@ -542,6 +489,49 @@ strong
 		border: #fff 1px solid
 		padding: 2px 10px
 		display: inline-block
+
+.mobile
+	display: none
+
+.slides 
+	display: none
+
+.slider
+	max-width: 500px
+	position: relative
+	margin: auto
+	margin-bottom: 30px
+
+.dot
+	cursor: pointer
+	height: 10px
+	width: 10px
+	margin: 0 3px
+	background-color: #c6cdff
+	border-radius: 50%
+	display: inline-block
+	transition: background-color 0.6s ease
+
+	/* Fading animation */
+.fade 
+	-webkit-animation-name: fade
+	-webkit-animation-duration: 1.5s
+	animation-name: fade
+	animation-duration: 1.5s
+
+
+@-webkit-keyframes fade
+	from 
+		opacity: .4
+	to
+		opacity: 1
+
+
+@keyframes fade 
+	from 
+		opacity: .4
+	to 
+		opacity: 1
 
 .podrt_descr
 	background-color: #fff
@@ -589,6 +579,10 @@ form
 		text-transform: uppercase
 		font-weight: 600
 		margin-top: 10px
+		&:hover
+			transform: scale(1.1)
+			background-color: #bc7a00
+			transition: 0.3s
 
 .form-group
 	display: block

@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-	$("#portfolio_grid").mixItUp();
 
 	$(".s_portfolio li").click(function() {
 		$(".s_portfolio li").removeClass("active");
@@ -11,18 +10,6 @@ $(document).ready(function() {
 		type:"inline",
 		midClick: true
 	});
-
-	$(".top_text h1").animated("fadeInDown", "fadeOutUp");
-	$(".top_text p, .section_header").animated("fadeInUp", "fadeOutDown");
-	$(".animation_1").animated("flipInX", "flipOutX");
-	$(".animation_2").animated("fadeInLeft", "fadeOutLeft");
-	$(".animation_3").animated("fadeInRight", "fadeOutRight");
-
-	$(".left .resume_item").animated("fadeInLeft", "fadeOutLeft");
-	$(".right .resume_item").animated("fadeInRight", "fadeOutRight");
-
-	$(".contact_box").animated("fadeInLeft", "fadeOutLeft");
-
 
 	function heightDetect() {
 		$(".main_head").css("height", $(window).height());
@@ -62,16 +49,38 @@ $(document).ready(function() {
 	$(".top_mnu a[href*='#']").mPageScroll2id();
 
 	$("input, select, textarea").jqBootstrapValidation();
-
-	$('.skillbar').each(function(){
-		$(this).find('.skillbar_bar').animate({
-			width:$(this).attr('data-percent')
-		}, 6000);
-	});
-
 });
 
+//Slider
+var slideIndex = 1;
+showSlides(slideIndex);
 
+// Next/previous controls
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+//function to set the current slide by clicking on specific dot
+function showSlides(n) {
+var i;
+var slides = document.getElementsByClassName("slides");
+var dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1} 
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+	slides[i].style.display = "none"; 
+}
+for (i = 0; i < dots.length; i++) {
+	dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block"; 
+dots[slideIndex-1].className += " active";
+}
 
 $(window).load(function() { 
 		$(".loader_inner").fadeOut(); 

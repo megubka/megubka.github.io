@@ -1,6 +1,6 @@
 @import "../bourbon/bourbon"
 
-$color: #19B5FE //Theme skin
+$color: #bc7a00 //Theme skin
 $text_color: #888
 $main_color: #222
 $bg_light: #FAFAFA
@@ -37,7 +37,7 @@ body .main_footer,
 	background-color: $main_color
 	color: #fff
 	.s_descr::after
-		background-color: #fff
+		background-color: $color
 	a
 		background-color: #fff
 
@@ -62,7 +62,7 @@ body .main_footer,
 .s_descr
 	+kerning(5)
 	&::after
-		background-color: $main_color
+		background-color: $color
 
 .s_about
 	background-color: $bg_light
@@ -110,6 +110,9 @@ section
 	a
 		border-color: $color
 		color: $color
+
+.active, .dot:hover 
+	background-color: $color
 
 .main_footer a
 	color: $color

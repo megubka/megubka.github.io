@@ -15,7 +15,6 @@
    .direction-r {
 	   float: none;
 	   width: 100%;
-   
 	   text-align: center;
    }
    
@@ -32,7 +31,7 @@
    .direction-r .flag:before {
 	 position: absolute;
 	 top: -30px;
-	   left: 50%;
+	 left: 50%;
 	   content: ' ';
 	   display: block;
 	   width: 12px;
@@ -40,7 +39,7 @@
 	   margin-left: -6px;
 	   background: #fff;
 	   border-radius: 10px;
-	   border: 3px solid #19B5FE;
+	   border: 3px solid #bc7a00;
 	   z-index: 10;
    }
    
@@ -94,6 +93,10 @@
 	   
 	 z-index: 15;
    }
+
+   .skill_container {
+	   height: 360px;
+   }
    
    
 }
@@ -109,6 +112,32 @@
 	.personal_last_block{
 		margin-top: 35px;
 	}
+
+	.skill_container {
+		height: auto;
+		margin-bottom: 20px;
+	}
+
+	.desktop {
+		display: none;
+	}
+
+	.mobile {
+		display: block;
+	}
+
+	.person {
+		margin-bottom: 60px;
+	}
+
+	.personal_last_block h3,
+	.personal_last_block h2 {
+		margin-bottom: 20px;
+	}
+
+	.personal_header {
+		text-align: center !important;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -119,6 +148,8 @@
 		text-align: left;
 		margin-bottom: 10px; 
 	}
+
+	
 }
 
 
@@ -188,7 +219,16 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-
+	.skill_container:hover {
+	transform: scale(1.1);
+	color: #bc7a00;
+	border: 2px solid #bc7a00;
+	transition: 0.3s;
+	}
+	.skill_container:hover > p {
+		transition: 0.3s;
+		color: #bc7a00
+	}
 }
 
  /* Large Devices, Wide Screens */

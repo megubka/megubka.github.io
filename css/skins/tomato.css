@@ -95,7 +95,7 @@ section h3 {
   border-color: #bc7a00;
   color: #bc7a00; }
 
-.active, .dot:hover {
+.slider_nav .active, .dot:hover {
   background-color: #bc7a00; }
 
 .main_footer a {
